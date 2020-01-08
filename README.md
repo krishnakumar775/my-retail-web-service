@@ -17,7 +17,7 @@ Used H2 in-memory database for this POC for ease of deployment and testing
 Added price details to DB for product with id : 13860428
 
 INSERT INTO price (id, value, currency_code) VALUES
-  (50513417, 33.50, 'USD');
+  (13860428, 13.49, 'USD');
 
 Other Libraries - swagger2 , lombok
 

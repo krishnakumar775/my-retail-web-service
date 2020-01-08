@@ -1,4 +1,4 @@
-# my-retail-web-service
+# My Retail Rest service
 
 # Live Server deployed on AWS using Elastic Beanstalk
 

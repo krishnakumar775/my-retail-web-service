@@ -16,7 +16,7 @@ Used H2 in-memory database for this POC for ease of deployment and testing
 
 Other Libraries - swagger2 , lombok
 
-Local Build Build the application using maven 
+Locally Build the application using maven 
 
 mvn clean package
 

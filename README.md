@@ -1,6 +1,6 @@
 # my-retail-web-service
 
-Live Server deployed on AWS using Elastic Beanstalk
+# Live Server deployed on AWS using Elastic Beanstalk
 
 http://myretailservice-env.pm3x79uym7.ap-south-1.elasticbeanstalk.com/swagger-ui.html
 

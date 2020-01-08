@@ -1,6 +1,7 @@
 package com.myretail.restservice.service;
 
 
+import com.myretail.restservice.exception.ResourceNotFoundException;
 import com.myretail.restservice.model.Price;
 import com.myretail.restservice.model.Product;
 import com.myretail.restservice.repository.PriceRepository;
@@ -48,5 +49,23 @@ public class ProductServiceTests {
 
         assertEquals(productResponse.getName(), "Product_Name");
 
+    }
+
+    @Test(expected = ResourceNotFoundException.class)
+    public void getProductDetails_WhenNameIsNotFound() throws Exception {
+
+        Product product = new Product();
+
+        Price price = new Price();
+        price.setValue(25.4);
+        price.setCurrencyCode("USD");
+
+        product.setPrice(price);
+        product.setName("Name");
+        product.setId(13860428L);
+
+        when(externalApiService.getProductName(13860428L)).thenReturn("");
+
+        Product productResponse = productService.getProductDetails(13860428L);
     }
 }

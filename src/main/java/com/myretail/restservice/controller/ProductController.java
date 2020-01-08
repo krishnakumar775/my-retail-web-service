@@ -33,7 +33,7 @@ public class ProductController {
     @ApiOperation(value = "Find Product details by id",
             notes = "Provide an id to look up details of the product with that id",
             response = Product.class)
-    public Product getProductDetails(@ApiParam(value = "ID value for the product you need to retrieve", required = true, example = "123")
+    public Product getProductDetails(@ApiParam(value = "ID value for the product you need to retrieve", required = true, example = "13860428")
                                      @PathVariable long id) {
         log.debug("Request to get the product details for the id: {}", id);
 
@@ -45,7 +45,7 @@ public class ProductController {
     @ApiOperation(value = "Update Product Price by id",
             notes = "Provide an id and new price details to update the price of the product with that id",
             response = Product.class)
-    public Product updateProductPrice(@ApiParam(value = "ID value for the product you need to update the price", required = true, example = "123")
+    public Product updateProductPrice(@ApiParam(value = "ID value for the product you need to update the price", required = true, example = "13860428")
                                       @PathVariable long id,
                                       @RequestBody PriceUpdateRequest priceUpdateRequest) {
         log.debug("Request to update the price details for the id: {}", id);

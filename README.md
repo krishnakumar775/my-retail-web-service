@@ -46,6 +46,6 @@ http://localhost:5000/swagger-ui.html for api documentation
 
    http://localhost:5000/products/13860428 with json body: { "value": 70, "currency_code": "USD" }
    
- # I have pre-seeded the price details only for product id 13860428 to the DB
+I have pre-seeded the price details only for product id 13860428 to the DB
 
 

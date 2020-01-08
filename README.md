@@ -14,6 +14,11 @@ Maven 3.5.0
 
 Used H2 in-memory database for this POC for ease of deployment and testing 
 
+Added price details to DB for product with id : 13860428
+
+INSERT INTO price (id, value, currency_code) VALUES
+  (50513417, 33.50, 'USD');
+
 Other Libraries - swagger2 , lombok
 
 Locally Build the application using maven 
@@ -34,3 +39,11 @@ Example API calls
   http://localhost:5000/products/13860428
 
   http://myretailservice-env.pm3x79uym7.ap-south-1.elasticbeanstalk.com/products/13860428
+  
+2) Update the product price
+
+   Send a PUT request to http://localhost:5000/products/{id}
+
+   http://localhost:5000/products/13860428 with json body: { "value": 70, "currency_code": "USD" }
+
+

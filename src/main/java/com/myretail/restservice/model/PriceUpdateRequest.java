@@ -1,5 +1,6 @@
 package com.myretail.restservice.model;
 
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -7,7 +8,7 @@ import lombok.Data;
 @Data
 public class PriceUpdateRequest {
 
-    private Double valie;
+    private Double value;
     private String currency_code;
 
 

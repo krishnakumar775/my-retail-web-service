@@ -4,7 +4,7 @@ Live Server deployed on AWS using Elastic Beanstalk
 
 http://myretailservice-env.pm3x79uym7.ap-south-1.elasticbeanstalk.com/swagger-ui.html
 
-Technologies
+# Technologies
 
 Java JDK 1.8.0
 
@@ -21,18 +21,18 @@ INSERT INTO price (id, value, currency_code) VALUES
 
 Other Libraries - swagger2 , lombok
 
-Locally Build the application using maven 
+# Locally Build the application using maven 
 
 mvn clean package
 
-Run the Application using
+# Run the Application using
 
 java -jar rest-service-1.0.0.jar
 
 http://localhost:5000/swagger-ui.html for api documentation
 
 
-Example API calls
+# Example API calls
 
 1) Get the product details of the product with ID - 13860428
 
